@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BuildControls = () => {
+const BuildControls = (props) => {
   return (
     <div>
       
