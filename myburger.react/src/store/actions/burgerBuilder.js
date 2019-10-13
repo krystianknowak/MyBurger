@@ -29,17 +29,13 @@ export const fetchIngredientsFailed = () => {
 };
 
 export const initIngridients = () => {
-  console.log("feczuje");
   return dispatch => {
-    console.log("feczuje w dispatchu");
     axios
       .get("/ingredients.json")
       .then(res => {
-        console.log("res.data");
         dispatch(setIngredients(res.data));
       })
       .catch(error => {
-        console.log("ERRROR");
         dispatch(fetchIngredientsFailed());
       });
   };
