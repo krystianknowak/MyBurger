@@ -28,10 +28,5 @@
 
 .Invalid {
     border: 1px solid red;
-    background-color: rgba(238, 188, 169, 0.548);
+    background-color: #FDA49A;
 }
-
-.ValidationError {
-    color: red;
-    margin: 5px 0;
-} 
